@@ -482,7 +482,7 @@
         vi veggies.txt
                 </code></pre>
             </section>
-    <!-- Combining files
+    <!-- Combining files-->
             <section class="hide-pdf">
                 <h2>Combining files</h2>
                 <p><strong class="blue">cat</strong> (concatenate)</p>
@@ -491,7 +491,7 @@
                 <pre class="terminal"><code class="xml">
     cat fruit.txt veggies.txt > produce.txt
                 </code></pre>
-            </section>-->
+            </section>
         <!-- Review! -->
             <section class="hide-pdf">
                 <h2>Review</h2>
@@ -533,7 +533,7 @@
                     <p><span class="blue">Syntax:</span> find [location] [options] [search terms]</p>
                 <pre class="terminal"><code class="xml">
     find . "practice"
-    find . -type d "practice"
+    find . -type d -name "practice"
                 </code></pre>
             </section>
             
@@ -546,9 +546,9 @@
                     <li><strong class="blue">[ ]</strong> match range of characters</li>
                 </ul>
                 <pre class="terminal"><code class="xml">
-    find . "*.txt"
-    find . "?ruit"
-    find . "[a-k]*.txt"
+    find . -name "*.txt"
+    find . -name "?ruit"
+    find . -name "[a-k]*.txt"
                 </code></pre>
             </section>
         <!-- Searching within files -->
@@ -723,7 +723,7 @@
             <section class="hide-pdf">
                 <h2>Class SSH Login</h2>
                 <p>&nbsp;</p>
-                <pre class="terminal"><code class="xml" style="font-size: 1.5em;">
+                <pre class="terminal"><code class="xml" style="font-size: 1.4em;">
  ssh gdiboston@209.208.111.254
 
  password: gdiboston2016!
@@ -747,7 +747,7 @@
                 <p><span class="blue">Transfer from local to remote:</span><br> 
                 scp [source path] [user]@[location]:[destination path]</p>
                 <pre class="terminal"><code class="xml">
-    scp fruit.txt gdiboston@209.208.111.254:~/
+ scp fruit.txt gdiboston@209.208.111.254:~/
                 </code></pre>
             </section>
             <section class="hide-pdf">
