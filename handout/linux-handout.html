@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+
+	<head>
+		<title>Linux Commands Quick Reference</title>
+		<link rel='stylesheet' href='css/styles.css' type='text/css' media='all' />
+		
+	</head>
+	
+	<body>
+		<h1>Linux Commands Quick Reference</h2>
+		
+		<!-- Left Column -->
+		<section>
+			<div>
+				<h2>Navigation</h2>
+				<p><strong>Print working directory</strong> Show your current location in the directory structure</p>
+				<pre><code>
+pwd
+				</code></pre>
+				<p><strong>List</strong> List the files and folders in a directory</p>
+				<pre><code>
+ls
+				</code></pre>
+				<p><strong>Change directory</strong> Switch to a different directory</p>
+				<pre><code>
+cd foldername
+				</code></pre>
+				<p><strong>Special Locations</strong></p>
+				<ul>
+					<li><strong>. </strong>Here (current directory)</li>
+					<li><strong>../ </strong>One level up from the current directory</li>
+					<li><strong>~/ </strong>Home (current user's home directory)</li>
+					<li><strong>/ </strong>Root (top-most directory)</li>
+				</ul>
+			</div>
+			<div>
+				<h2>Accessing other machines</h2>
+				<p><strong>Secure Shell</strong> Access another machine remotely, via an encrypted, access-controlled connection</p>
+				<p>ssh [username]@[location]</p>
+				<pre><code>
+ssh username@remotesite.org
+				</code></pre>
+				<p><strong>Secure Copy</strong> Transfer files between 2 machines<br></p>
+				<p>Transfer from local to remote<br>
+				scp [source path] [username]@[location]:[destination path]</p>
+				<pre><code>
+scp filename.txt username@remotesite.org:~/
+				</code></pre>
+				<p>Transfer from remote to local<br>
+				scp [username]@[location]:[source path] [destination path] </p>
+				<pre><code>
+scp username@remotesite.org:~/filename.txt .
+				</code></pre>
+			</div>
+			<div>
+				<h2>Creating/Managing Files & Folders</h2>
+				<p><strong>Make directory</strong> Create a new (empty) folder</p>
+				<pre><code>
+mkdir foldername
+				</code></pre>
+				<p><strong>Touch</strong> Create a new (empty) file</p>
+				<pre><code>
+touch newfile.txt
+				</code></pre>
+				<p><strong>Copy</strong> Copy files/folders<br></p>
+				<p>cp [source] [destination]</p>
+				<p>Copy a file or an empty folder</p>
+				<pre><code>
+cp file1.txt file2.txt
+				</code></pre>
+				<p>Copy a folder and its contents</p>
+				<pre><code>
+cp -r folder1 folder2
+				</code></pre>
+				<p><strong>Move</strong> Move or rename files/folders</p>
+				<p>mv [source] [destination]</p>
+				<p>To move a file/folder, specify a path and a name</p>
+				<pre><code>
+mv file1.txt folder1/file1.txt
+mv folder1 documents/folder1
+				</code></pre>
+				<p>To rename a file/folder, specify only a new name</p>
+				<pre><code>
+mv file1.txt file2.txt
+mv folder1 folder2
+				</code></pre>
+				<p><strong>Remove</strong> Delete files/folders</p>
+				<p>Delete a file or an empty folder</p>
+				<pre><code>
+rm filename.txt
+				</code></pre>
+				<p>Delete a folder and its contents</p>
+				<pre><code>
+rm -r foldername
+				</code></pre>
+			</div>
+
+			
+			
+			
+			
+		</section>
+		
+		<!-- Right Column -->
+		<section>
+			<div>
+				<h2>Searching</h2>
+				<p><strong>Find</strong> Search for files/folders</p>
+				<p>find [location] [options] [search terms]</p>
+				<pre><code>
+find ~/ "filename"
+				</code></pre>
+				<p><strong>Grep</strong> Search for text within files</p>
+				<p>grep [options] [search terms] [file(s)]</p>
+				<p>Search for text within a single file</p>
+				<pre><code>
+grep searchterm filename.txt
+				</code></pre>
+				<p>Search for text in all files within a folder<br></p>
+				<pre><code>
+grep -r searchterm foldername
+				</code></pre>
+			</div>
+			<div>
+				<h2>Permissions</h2>
+				<p>Permission types:<br>
+					<ul>
+						<li><strong>r (read)</strong> view a file/folder's content</li>
+					    <li><strong>w (write)</strong> edit a file/folder</li>
+					    <li><strong>x (execute)</strong> run a file (if it's a program/script) OR enter a folder</li>
+					</ul>
+				</p>
+				<p>User roles:<br>
+					<ul>
+						<li><strong>u (user/owner)</strong> owner of the file/folder</li>
+					    <li><strong>g (group)</strong> group that a file/folder belongs to</li>
+					    <li><strong>o (others)</strong> everyone who is not the owner or a group member</li>
+					    <li><strong>a (all)</strong> all roles (user, group AND others)</li>
+					</ul>
+				</p>
+				<p><strong>Chmod</strong> Change permissions for files/folders</p>
+				<p>chmod [user role][+ add or - remove][permission type] [file]</p>
+				<p>Change permission for a single file</p>
+				<pre><code>
+chmod g+w filename.txt
+				</code></pre>
+				<p>Change permission for all files in a folder</p>
+				<pre><code>
+chmod g-w foldername/*
+				</code></pre>
+				<p><strong>Sudo</strong> Run any single command as 'root' user</p>
+				<pre><code>
+sudo chmod g+w newproject/*
+				</code></pre>
+			</div>
+			<div>
+				<h2>Editing Files</h2>
+				<p><strong>Open</strong> Open files in an external application</p>
+				<p>Open a file in its default application</p>
+				<pre><code>
+open filename.txt
+				</code></pre>
+				<p>Open a file in a specific application</p>
+				<pre><code>
+open filename.txt -a textedit
+				</code></pre>
+				<p><strong>Vi</strong> Open or create a file in the Vi command line text editor</p>
+				<p>Open an existing file in Vi</p>
+				<pre><code>
+vi filename.txt
+				</code></pre>
+				<p>Create a new file and open it in Vi<br><em>(Note: the new file won't be saved until you save it in using :w or :wq)</em></p>
+				<pre><code>
+vi newfile.txt
+				</code></pre>
+				<p><strong>Vi Commands</strong> These only work when you're inside the Vi editor!</p>
+				<ul>
+					<li><strong>i </strong>Insert mode (add/edit text)</li>
+					<li><strong>esc </strong>Command mode (search/navigate around the file without affecting text)</li>
+					<li><strong>:w </strong>Save without quitting (must be in command mode) </li>
+					<li><strong>:wq </strong>Save and quit Vi (must be in command mode)</li>
+					<li><strong>:q </strong>Quit without saving (must be in command mode)</li>
+					<li><strong>:q! </strong>Quit without saving, even if Vi doesn't want to (must be in command mode)</li>
+				</ul>
+				<p><strong>Concatenate</strong> View a file's contents OR combine multiple files into one</p>
+				<p>View the contents of a file</p>
+				<pre><code>
+cat filename.txt
+				</code></pre>
+				<p>Combine multiple files into one: cat [file1] [file2] > [newfile]</p>
+				<pre><code>
+cat file1.txt file2.txt > file3.txt
+				</code></pre>
+			</div>
+			
+			
+			
+		</section>
+		
+		
+	</body>
+
+</html>
