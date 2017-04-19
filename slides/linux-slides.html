@@ -1,132 +1,141 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+<head>
+    <meta charset="utf-8">
 
-		<title>GDI Boston Intro to the Linux Command Lne</title>
+    <title>GDI Boston Intro to the Linux Command Lne</title>
 
-		<meta name="description" content="Slides for Girl Develop It Boston's Intro to the Linux Command Line class">
-		<meta name="author" content="Girl Develop It">
+    <meta name="description" content="Slides for Girl Develop It Boston's Intro to the Linux Command Line class">
+    <meta name="author" content="Girl Develop It">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/gdidefault.css" id="theme">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/gdidefault.css" id="theme">
 
-		<!-- For syntax highlighting -->
-		<!-- light editor<link rel="stylesheet" href="lib/css/light.css">-->
-		<!-- dark editor--><link rel="stylesheet" href="lib/css/dark.css">
+    <!-- For syntax highlighting -->
+    <!-- light editor<link rel="stylesheet" href="lib/css/light.css">-->
+    <!-- dark editor-->
+    <link rel="stylesheet" href="lib/css/dark.css">
 
-		<!-- If use the PDF print sheet so students can print slides-->
-		
-		<link rel="stylesheet" href="css/print/pdf.css" type="text/css" media="print">
+    <!-- If use the PDF print sheet so students can print slides-->
+
+    <link rel="stylesheet" href="css/print/pdf.css" type="text/css" media="print">
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
-		<!--[if lt IE 9]>
+    <!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
-	</head>
+</head>
 
-	<body>
+<body>
 
-		<div class="reveal">
+    <div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-        <!-- Opening -->
-				<section>
-					<!--<h1>Intro to the Linux Command Line</h1>-->
-                    <h3>Intro to the</h3>
-					<h1>Linux Command Line</h1>
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+            <!-- Opening -->
+            <section>
+                <!--<h1>Intro to the Linux Command Line</h1>-->
+                <h3>Intro to the</h3>
+                <h1>Linux Command Line</h1>
 
-					<p>
-						<small>Find these slides (and other handy resources) at <a href ="https://github.com/gdiboston/gdi-intro-linux">https://github.com/gdiboston/gdi-intro-linux</a></small>
-					</p>
-				</section>
-             <!-- Welcome! -->
+                <p></p>
+                <p>Girl Develop It | Spring 2017</p>
+
+            </section>
+            <!-- Welcome! -->
             <section class="hide-pdf">
                 <h2>Welcome!</h2>
+                <img src="./img/GDIBoston.png" width="200px" />
                 <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
-                <p>&nbsp;</p>
-                <p class="green">Some "rules"</p>
+            </section>
+
+            <!-- Ground Rules -->
+            <section class="hide-pdf">
+                <h2>Ground Rules</h2>
                 <ul>
-                    <li>We are here for you!</li>
+                    <li>This is your time!</li>
                     <li>Every question is important</li>
+                    <li>Don't get blocked</li>
                     <li>Help each other</li>
                     <li>Have fun</li>
                 </ul>
             </section>
-            
-            <!-- First Things First -->
+
+            <!-- Our Team -->
             <section>
-                <h2>First Things First</h2>
+                <h2>Our Team</h2>
 
                 <p class="blue">Thank you to our wonderful TAs!</p>
                 <ul>
-                    <li>Sean Kelly</li>
-                    <li>Amanda Mu&ntilde;oz</li>
+                    <p>Christine Chapman</p>
+                    <p>Rachel Adler</p>
                 </ul>
                 <p>&nbsp;</p>
                 <p class="blue">Course website: </p>
-                <p>https://github.com/gdiboston/gdi-intro-linux</p>
+                <p>https://github.com/shaynacummings/gdi-intro-linux</p>
                 <p>&nbsp;</p>
                 <p class="blue">Instructor contact info: </p>
-                <p>lizk@girldevelopit.com</p>
-            </section>   
+                <p>@ShaynaCummings</p>
+                <p>shayna.cummings@gmail.com</p>
+            </section>
+            <!-- About You -->
             <section class="hide-pdf">
-                <h2>First Things First</h2>
-                <p class="blue">Tell us about yourself.</p>
+                <h2>About You</h2>
                 <ul>
                     <li>Who are you?</li>
                     <li>What do you hope to get out of the class?</li>
-                    <li>What's your spirit vegetable?</li>
+                    <li>If you could have any superpower, what would it be?</li>
                 </ul>
             </section>
-        <!-- Get started -->
+            <!-- Get started -->
             <section class="hide-pdf">
                 <h2>Getting Started: Tools</h2>
-                <p>We'll be using the following tools in class today:</p>
                 <ul>
-                    <li>Mac OS: Terminal (pre-installed)</li>
-                    <li>Linux: Terminal (pre-installed)</li>
-                    <li>Windows: Cygwin (download from <a href="https://www.cygwin.com/">https://www.cygwin.com</a></li>
-                    
+                    <li>If you are using Mac OS: Terminal (pre-installed)</li>
+                    <li>If you are using Linux: Terminal (pre-installed)</li>
+                    <li>If you are using Windows: Cygwin (download from <a href="https://www.cygwin.com/">www.cygwin.com</a>)</li>
+
                 </ul>
             </section>
-        <!-- What is Linux? -->
+            <!-- What is Linux? -->
             <section class="hide-pdf">
                 <h2>What is Linux?</h2>
                 <ul>
-                    <li><strong class="blue">Linux:</strong> A free/open source operating system (OS) released by Linus Torvalds in 1991, as an alternative to Unix, a powerful (and proprietary) OS developed by AT&T</li>
-                    <li>Popular as a server OS, and as a core for other OS' (incuding MacOS!)</li>
-                    <li><strong class="blue">Linux distribution (distro):</strong> A packaged version of Linux that you can install on your dektop or server (Unbuntu, Debian, Fedora, etc)</li>
+                    <li><strong class="blue">Linux:</strong> A free and open source Unix-like operating system (OS) first released by Linus Torvalds in 1991</li>
+                    <li><strong class="blue">On the Desktop:</strong> A 'distro' is packaged version of Linux that you can install on your dektop, that usually involves a graphical user interface (GUI). Some desktop distros you might have heard of include
+                        Unbuntu, Debian, Fedora, Mint.</li>
+                    <li><strong class="blue">As a server OS:</strong> Examples include Ubuntu Server, Red Hat, CentOS.</li>
+                    <li>Popular as a server OS (e.g., ), and as a core for other Operating Systems (e.g., Android, Chrome OS)</li>
                 </ul>
             </section>
-        <!-- What is the Command Line? -->
+            <!-- What is the Command Line? -->
+
+            <!--What is a Shell? A text-based command interpreter The most common shell (and default on OS X) is BASH The Prompt Usually shows your username and computer name (hostname). It indicates that the shell is ready for you to enter a command.-->
             <section class="hide-pdf">
                 <h2>What is the Command Line?</h2>
                 <ul>
-                    <li><strong class="blue">Command Line (CLI):</strong> a text-based interface to your computer</li>  
-                    <li>Not specific to a particular OS</li> 
-                    <li>Not required in order to use Linux (some distros include GUIs)
+                    <li><strong class="blue">Command Line Interface (CLI):</strong> a text-based interface that allows you to give commands to your computer</li>
+                    <li>Not specific to a particular OS</li>
+                    <li>Not required in order to use Linux (some distros, such as Ubuntu, include GUIs)
                 </ul>
-                <p><strong class="blue">However...</strong><br> "Linux" is most often used to refer to the Linux command line</p>
             </section>
-        <!-- Why learn Linux command line? -->
+            <!-- Why learn Linux command line? -->
             <section class="hide-pdf">
-                <h2>Why learn Linux Command Line?</h2>
+                <h2>Why learn the Linux Command Line?</h2>
                 <ul>
-                    <li>Many software applications can only be installed/used via the command line</li>  
-                    <li>In software dev/research, servers are usually accessed/managed via the command line</li>
-                    <li>Do so many more things...and do them faster!</li>
+                    <li>It's faster and allows you more granular control over your machine</li>
+                    <li>Many software programs can only be installed/used via the command line</li>
+                    <li>Servers (especially remote) are usually accessed and managed via the command line</li>
                 </ul>
             </section>
-        <!-- What we'll cover today -->
+            <!-- What we'll cover today -->
             <section class="hide-pdf">
                 <h2>What we'll cover today</h2>
                 <ul>
-                    <li>Navigation</li>  
+                    <li>Navigation</li>
                     <li>Creating/Managing Folders & Files</li>
                     <li>Editing Files</li>
                     <li>Searching</li>
@@ -134,37 +143,37 @@
                     <li>Accessing other machines</li>
                 </ul>
             </section>
-        <!-- Hello Terminal! -->
+            <!-- Hello Terminal! -->
             <section class="hide-pdf">
                 <h2>Hello Terminal!</h2>
                 <ul>
-                    <li><strong class="blue">Mac OS:</strong> open Applications > Utilities > Terminal</li>  
-                    <li><strong class="blue">Win:</strong> in the Start menu or screen, search for Cygwin </li> 
-                    
+                    <li><strong class="blue">Mac OS:</strong> open Applications > Utilities > Terminal</li>
+                    <li><strong class="blue">Win:</strong> in the Start menu or screen, search for Cygwin </li>
+
                 </ul>
-    
+
                 <pre class="terminal"><code class="xml">
     user@bash: 
                 </code></pre>
             </section>
-        <!-- Basic Navigation -->
+            <!-- Basic Navigation -->
             <section class="hide-pdf">
                 <p>&nbsp;</p>
                 <p>&nbsp;</p>
                 <p>&nbsp;</p>
                 <h2>Navigation</h2>
             </section>
-        <!-- Where are we? -->
+            <!-- Where are we? -->
             <section class="hide-pdf">
                 <h2>Where are we?</h2>
                 <p><strong class="blue">pwd</strong> (print working directory)</p>
-        
-                <p><small>Shows your current location in the directory structure</small></P>
+
+                <p><small>Shows your current location in the directory (file) structure</small></P>
                 <pre class="terminal"><code class="xml">
             pwd
                 </code></pre>
             </section>
-        <!-- What's in here? -->
+            <!-- What's in here? -->
             <section class="hide-pdf">
                 <h2>What's in here?</h2>
                 <p><strong class="blue">ls</strong> (list)</p>
@@ -173,7 +182,7 @@
             ls
                 </code></pre>
             </section>
-        <!-- Getting more specific -->
+            <!-- Getting more specific -->
             <section class="hide-pdf">
                 <h4>Getting more specific</h4>
                 <h2>Options & Arguments</h2>
@@ -182,9 +191,9 @@
                 <pre class="terminal"><code class="xml">
             ls -l Documents
                 </code></pre>
-       <p><small>Shows more info about files/folders in our current directory</small></p>
+                <p><small>In this example, adding an option of <code>-l</code> shows more info about files/folders in our current directory</small></p>
             </section>
-        <!-- Getting more specific -->
+            <!-- Getting more specific -->
             <section class="hide-pdf">
                 <h4>How do I know what options/arguments are available?</h4>
                 <h2>Man Pages</h2>
@@ -193,8 +202,11 @@
                 <pre class="terminal"><code class="xml">
             man ls
                 </code></pre>
+                <h2>Program help</h2>
+                <p><strong class="blue">--help</strong></p>
+                <p><small><code>--help</code> is an option baked into some programs to give you more info about how to use their commands</small></p>
             </section>
-        <!-- Moving around -->
+            <!-- Moving around -->
             <section class="hide-pdf">
                 <h2>Moving around</h2>
                 <p><strong class="blue">cd</strong> (change directory)</p>
@@ -203,13 +215,31 @@
             cd documents
                 </code></pre>
             </section>
+            <!-- Root directory -->
+            <section class="hide-pdf">
+                <h2>File System Layout</h2>
+                <p>Let's practice some navigational skills:</p>
+                <img src="img/linux-filesystem.png" />
+                <p>In OSX, <code>/home/</code> is <code>/Users/</code></p>
+
+                <!--Varies between systems, but some common folders:
+/bin: Basic commands
+/etc: System config files
+/tmp: Temporary files
+/usr: Regular user tools
+/usr/local: Installed user software
+/var: Data used by system-->
+            </section>
+
             <section class="hide-pdf">
                 <h2>Moving around</h2>
                 <h4>Specifying files/folders</h4>
                 <p><strong class="blue">Path:</strong> Hierarchy of directories that leads to a folder/file</p>
                 <ul>
-                    <li><strong class="blue">Relative paths</strong> start from your current location</li>
-                    <li><strong class="blue">Absolute paths</strong> start from a fixed location</li>
+                    <li><strong class="blue">Relative paths</strong> start from your current location:</br>
+                        <code>Photos/grumpycat.jpg</code></li>
+                    <li><strong class="blue">Absolute paths</strong> start from a fixed location:</br>
+                        <code>/Users/lizl/Desktop/Photos/grumpycat.jpg</code></li>
                 </ul>
             </section>
             <section class="hide-pdf">
@@ -253,7 +283,19 @@
                 </code></pre>
                 <p><span class="blue">Hint: If you get lost, there's no place like ~/ (home)!</span><br>
             </section>
-        <!-- Review! -->
+            <!-- Other Tricks -->
+            <section class="hide-pdf">
+                <h2>Other Tricks For Later</h2>
+                <ul>
+                    <li><span class="blue">tab autocomplete</span>: start typing a filename or folder, and hit tab to try to autocomplete it</li>
+                    <li><span class="blue">hidden/system files</span>: are preceded with a period (.) - you usually don't want to modify or delete these! But you can view them by running <code>ls -a</code>.
+                        <li><span class="blue">multiple terminal tabs/windows</span>: you can open a new terminal tab/window by pressing cmd+T or cmd+N</li>
+                        <li><span class="blue">clearing your terminal</span>: you can clear your screen by typing <code>clear</code></li>
+                        <li><span class="blue">terminal history</span>: type <code>history</code>, or hit the up or down arrow to scroll through all the commands you've already entered</li>
+                        <li><span class="blue">change the look/feel of your terminal</span>: this can be managed under the 'preferences' or 'settings' menu, or via your bash profile (more on this later)</li>
+                </ul>
+            </section>
+            <!-- Review! -->
             <section class="hide-pdf">
                 <h2>Review</h2>
                 <p>We learned some great stuff about navigation!</p>
@@ -264,7 +306,7 @@
                     <li><span class="blue">man</span> shows info about a command, including all of its available options</li>
                 </ul>
             </section>
-        <!-- Practice -->
+            <!-- Practice -->
             <section class="hide-pdf">
                 <h2>Practice</h2>
                 <p>Let's practice some navigational skills:</p>
@@ -274,32 +316,26 @@
                     <li>Move up one directory level, then show the files/folders inside it</li>
                     <li>Switch to your root directory, then show the files/folders inside it</li>
                     <li>Switch to your home directory</li>
-                    
+
                 </ol>
             </section>
 
-        <!-- Linux file structure
+            <!-- Linux file structure
             <section class="hide-pdf">
                 <p>&nbsp;</p>
                 <p>&nbsp;</p>
                 <p>&nbsp;</p>
                 <h2>Linux File System</h2>
             </section> -->
-        <!-- Root directory -->
-            <section class="hide-pdf">
-                <h2>File System Layout</h2>
-                <p>Let's practice some navigational skills:</p>
 
-                <img src="img/linux-filesystem.png" />
-            </section>
-        <!-- Creating/Editing files & folders -->
+            <!-- Creating/Editing files & folders -->
             <section class="hide-pdf">
                 <p>&nbsp;</p>
                 <p>&nbsp;</p>
                 <p>&nbsp;</p>
                 <h2>Creating/Managing Folders & Files</h2>
             </section>
-             <!-- Creating folders -->
+            <!-- Creating folders -->
             <section class="hide-pdf">
                 <h2>Creating Folders</h2>
                 <p><strong class="blue">mkdir</strong> (make directory)</p>
@@ -308,15 +344,15 @@
         mkdir newfolder
                 </code></pre>
             </section>
-             <!-- Folder & file names -->
+            <!-- Folder & file names -->
             <section class="hide-pdf">
                 <h2>Folder & file names</h2>
                 <p><strong class="blue">Linux is picky!</strong></p>
                 <ul>
-                    <li>Case sensitive</li>
+                    <li>Linux is case sensitive (<code>filename.txt</code> is different than <code>FileName.txt</code>), but Mac's OS is not!</li>
                     <li>Avoid spaces (use dashes or underscores)</li>
-                    <li>Avoid special characters</p>
-                    <li>Specify file extensions</p>
+                    <li>Avoid special characters</li>
+                    <li>Always specify file extensions</li>
                 </ul>
             </section>
             <!-- Creating files -->
@@ -333,7 +369,7 @@
                 <h2>Copying Files</h2>
                 <p><strong class="blue">cp</strong> (copy)</p>
                 <p><small>Copies a file to a specified location</small></p>
-                    <p><span class="blue">Syntax:</span> cp [source] [destination]</p>
+                <p><span class="blue">Syntax:</span> cp [source] [destination]</p>
                 <pre class="terminal"><code class="xml">
         cp newfile.txt newfile2.txt
                 </code></pre>
@@ -343,7 +379,7 @@
                 <h2>Copying Files</h2>
                 <p><strong class="blue">cp -r</strong> (copy, recursively)</p>
                 <p><small>Copies a folder and its contents to a specified location</small></p>
-                    <p><span class="blue">Syntax:</span> cp -r [source] [destination]</p>
+                <p><span class="blue">Syntax:</span> cp -r [source] [destination]</p>
                 <pre class="terminal"><code class="xml">
         cp -r newfolder newfolder2 
                 </code></pre>
@@ -353,13 +389,13 @@
                 <h2>Moving & renaming</h2>
                 <p><strong class="blue">mv</strong> (move)</p>
                 <p><small>Moves a file/folder (and its contents) to a specified location<br>OR renames it, if no location specified</small></p>
-                    <p><span class="blue">Syntax:</span> mv [source] [destination]</p>
+                <p><span class="blue">Syntax:</span> mv [source] [destination]</p>
                 <pre class="terminal"><code class="xml">
   mv newfile.txt newname.txt
   mv newfolder/newname.txt newfolder2/newname.txt
                 </code></pre>
             </section>
-        <!-- Deleting files -->
+            <!-- Deleting files -->
             <section class="hide-pdf">
                 <h2>Deleting Files</h2>
                 <p><strong class="blue">rm</strong> (remove)</p>
@@ -368,7 +404,7 @@
         rm newfile2.txt
                 </code></pre>
             </section>
-        <!-- Deleting folders -->
+            <!-- Deleting folders -->
             <section class="hide-pdf">
                 <h2>Deleting Folders</h2>
                 <p><strong class="blue">rm -r</strong> (remove, recursively)</p>
@@ -376,8 +412,9 @@
                 <pre class="terminal"><code class="xml">
         rm -r newfolder
                 </code></pre>
+                <p><strong class="blue">&#x26A0 Running <code>rm -rf</code> will also permanently delete a whole folder and its contents without prompting you. Use with caution!</strong></p>
             </section>
-        <!-- Review! -->
+            <!-- Review! -->
             <section class="hide-pdf">
                 <h2>Review</h2>
                 <p>Essentials for wrangling files and folders:</p>
@@ -389,7 +426,7 @@
                     <li><span class="blue">rm</span> remove a file or folder (-r to remove folder)</li>
                 </ul>
             </section>
-        <!-- Practice -->
+            <!-- Practice -->
             <section class="hide-pdf">
                 <h2>Practice</h2>
                 <p>Essentials for wrangling files and folders:</p>
@@ -399,37 +436,38 @@
                     <li>Inside practice, create a new file named fruit.txt</li>
                 </ol>
             </section>
-        <!-- Editing files -->
+            <!-- Editing files -->
             <section class="hide-pdf">
                 <p>&nbsp;</p>
                 <p>&nbsp;</p>
                 <p>&nbsp;</p>
                 <h2>Editing files</h2>
             </section>
-        <!-- Opening files -->
+            <!-- Opening files -->
             <section class="hide-pdf">
                 <h2>Opening files</h2>
                 <p><strong class="blue">open</strong></p>
                 <p><small>Opens a file in its default application (use -a option to open in a specific application)</small></p>
-                    <p><span class="blue">Syntax:</span> open [filename] -a [application]</p>
+                <p><span class="blue">Syntax:</span> open [filename] -a [application]</p>
                 <pre class="terminal"><code class="xml">
         open fruit.txt -a textedit
                 </code></pre>
-                <p class="blue">Open can cause scripts/programs to run - don't use it on unknown files!</p>
+                <p class="blue"><strong>&#x26A0</strong> <code>open</code> can cause scripts/programs to run - don't use it on unknown files!</p>
             </section>
-        <!-- Command line editors -->
+            <!-- Command line editors -->
             <section class="hide-pdf">
                 <h2>Command line text editors</h2>
                 <ul>
-                    <li>Open/edit files right in your command line application</li>
+                    <li>Open, edit and save files right in your terminal</li>
                     <li>Keyboard only - no mouse/no GUI</li>
-                    <li>Many available: vi, vim, nano, pico, emacs</li>
+                    <li>Examples: vi, vim, nano, pico, emacs</li>
+                    <li>Extensions, syntax highlighting, and plugins available</li>
                 </ul>
             </section>
-        <!-- Vi editor -->
+            <!-- Vi editor -->
             <section class="hide-pdf">
                 <h2>Vi editor</h2>
-                 <ul>
+                <ul>
                     <li>Longstanding/popular editor; often the default on Linux systems</li>
                 </ul>
                 <p class="blue"><br>Check to see if vi is installed:</p>
@@ -437,7 +475,7 @@
         which vi
                 </code></pre>
             </section>
-        <!-- Open file in vi -->
+            <!-- Open file in vi -->
             <section class="hide-pdf">
                 <h2>Opening files in vi</h2>
                 <p><strong class="blue">vi</strong></p>
@@ -446,7 +484,7 @@
         vi fruit.txt
                 </code></pre>
             </section>
-        <!-- Basic vi commands -->
+            <!-- Basic vi commands -->
             <section class="hide-pdf">
                 <h2>Basic vi commands</h2>
                 <ul>
@@ -461,7 +499,7 @@
                 </ul>
 
             </section>
-        <!-- Editing files in vi -->
+            <!-- Editing files in vi -->
             <section class="hide-pdf">
                 <h2>Editing files in vi</h2>
                 <pre class="terminal"><code>
@@ -474,7 +512,7 @@
                 </code></pre>
                 <p>Add some text to the file (i), then (esc) and quit (:q)</p>
             </section>
-    <!-- Creating new files with vi -->
+            <!-- Creating new files with vi -->
             <section class="hide-pdf">
                 <h2>Creating new files with vi</h2>
                 <p><span class="blue">Syntax:</span> vi [filename]</p>
@@ -482,7 +520,7 @@
         vi veggies.txt
                 </code></pre>
             </section>
-    <!-- Combining files-->
+            <!-- Combining files-->
             <section class="hide-pdf">
                 <h2>Combining files</h2>
                 <p><strong class="blue">cat</strong> (concatenate)</p>
@@ -492,7 +530,7 @@
     cat fruit.txt veggies.txt > produce.txt
                 </code></pre>
             </section>
-        <!-- Review! -->
+            <!-- Review! -->
             <section class="hide-pdf">
                 <h2>Review</h2>
                 <p>Essential commands for editing files:</p>
@@ -518,26 +556,26 @@
                     <li>Combine students.txt and teachers.txt into a new file named rockstars.txt</li>-->
                 </ol>
             </section>
-        <!-- Searching -->
+            <!-- Searching -->
             <section class="hide-pdf">
                 <p>&nbsp;</p>
                 <p>&nbsp;</p>
                 <p>&nbsp;</p>
                 <h2>Searching</h2>
             </section>
-        <!-- Searching for files/folders -->
+            <!-- Searching for files/folders -->
             <section class="hide-pdf">
                 <h2>Searching for files/folders</h2>
                 <p><strong class="blue">find</strong></p>
                 <p><small>Finds a file or folder</small></p>
-                    <p><span class="blue">Syntax:</span> find [location] [options] [search terms]</p>
+                <p><span class="blue">Syntax:</span> find [location] [options] [search terms]</p>
                 <pre class="terminal"><code class="xml">
     find . "practice"
     find . -type d -name "practice"
                 </code></pre>
             </section>
-            
-        <!-- Wildcards! -->
+
+            <!-- Wildcards! -->
             <section class="hide-pdf">
                 <h2>Wildcards!</h2>
                 <ul>
@@ -551,25 +589,25 @@
     find . -name "[a-k]*.txt"
                 </code></pre>
             </section>
-        <!-- Searching within files -->
+            <!-- Searching within files -->
             <section class="hide-pdf">
                 <h2>Searching within files</h2>
                 <p><strong class="blue">grep</strong></p>
                 <p><small>Finds text within files</small></p>
-                    <p><span class="blue">Syntax:</span> grep [options] [search terms] [file(s)] </p>
+                <p><span class="blue">Syntax:</span> grep [options] [search terms] [file(s)] </p>
                 <pre class="terminal"><code class="xml">
     grep "apple" fruit.txt
     grep "apple" practice/*
     grep -r "apple" ~
                 </code></pre>
             </section>
-        <!-- Searching tips -->
+            <!-- Searching tips -->
             <section class="hide-pdf">
                 <h2>Search tips</h2>
                 <ul>
                     <li><span class="blue">Sytem-wide search:</span> Use find/grep on your root directory to search your entire computer...but be careful! (can take a long time)</li>
                     <li><span class="blue">Permissions issues:</span> find/grep only work on folders/files that you have permission to access (more on that soon!)
-                    <li><span class="blue">Cancel a search (or any command):</span> control + c
+                        <li><span class="blue">Cancel a search (or any command):</span> control + c
                 </ul>
             </section>
             <!-- Review! -->
@@ -628,14 +666,14 @@
                 <h2>Checking permissions</h2>
                 <p>Use the <span class="blue">ls -l</span> command we learned earlier<br> to view file/folder permissions</p>
                 <img src="img/permissions.png" style="border: none; padding: 15px; background-color: #000;" />
-          
+
             </section>
             <!-- Changing file permissions -->
             <section class="hide-pdf">
                 <h2>Changing file permissions</h2>
                 <p><strong class="blue">chmod</strong></p>
                 <p><small>Add or remove permissions for a file</small></p>
-                    <p><span class="blue">Syntax:</span> chmod [role][+ or -][permission] [file] </p>
+                <p><span class="blue">Syntax:</span> chmod [role][+ or -][permission] [file] </p>
                 <pre class="terminal"><code class="xml">
         chmod g+w fruit.txt
                 </code></pre>
@@ -647,7 +685,7 @@
                 <p>&nbsp;</p>
                 <p>To change permissions for all files in a folder, use:
                     <p>chmod [role][+ or -][permission] [parentfolder]/* </p>
-                <pre class="terminal"><code class="xml">
+                    <pre class="terminal"><code class="xml">
         chmod g+w newproject/*
                 </code></pre>
             </section>
@@ -658,7 +696,8 @@
                 <ul>
                     <li>'root' has has access to everything on a machine and can do anything with it</li>
                     <li>On your own machine, you can log in as 'root', but it's not a great idea</li>
-                    <li>Instead, you can use <span class="blue">sudo</span> to temporarily become 'root'</li>
+                    <li>Instead, you can use <span class="blue">sudo</span> to temporarily become 'root' if needed</li>
+                    <li>&#x26A0 Avoid using <span class="blue">sudo</span> when you install programs if possible</li>
                 </ul>
             </section>
             <!-- Sudo -->
@@ -678,8 +717,8 @@
                 <l>
                     <li><span class="blue">ls -l</span> check permissions for a folder/file</li>
                     <li><span class="blue">chmod</span> change permissions for a folder/file</li>
-                     <li><span class="blue">sudo</span> run a command as 'root'</li>
-                </ul>
+                    <li><span class="blue">sudo</span> run a command as 'root'</li>
+                    </ul>
             </section>
             <!-- Practice -->
             <section class="hide-pdf">
@@ -708,6 +747,7 @@
                     <li>Install software, make configuration changes, manage backups etc on a server</li>
                     <li>Transfer files between a server and your computer</li>
                     <li>Run code that requires a server environment</li>
+                    <li>&#x26A0 Only ssh into machines that you trust</li>
                 </ul>
             </section>
             <!-- Accessing other machines -->
@@ -715,7 +755,7 @@
                 <h2>Accessing other machines</h2>
                 <p><strong class="blue">ssh</strong> (secure shell)</p>
                 <p><small>Access another machine remotely, via an encrypted, access-controlled connection</small></p>
-                    <p><span class="blue">Syntax:</span> ssh [user]@[location]</p>
+                <p><span class="blue">Syntax:</span> ssh [user]@[location]</p>
                 <pre class="terminal"><code class="xml">
         ssh gdiboston@209.208.111.254
                 </code></pre>
@@ -739,21 +779,19 @@
     gdiboston@nerfherder: ls /
                 </code></pre>
             </section>
-             <!-- Transferring files -->
+            <!-- Transferring files -->
             <section class="hide-pdf">
                 <h2>Transferring files</h2>
                 <p><strong class="blue">scp</strong> (secure copy)</p>
                 <p><small>Transfer files between 2 machines</small></p>
-                <p><span class="blue">Transfer from local to remote:</span><br> 
-                scp [source path] [user]@[location]:[destination path]</p>
+                <p><span class="blue">Transfer from local to remote:</span><br> scp [source path] [user]@[location]:[destination path]</p>
                 <pre class="terminal"><code class="xml">
  scp fruit.txt gdiboston@209.208.111.254:~/
                 </code></pre>
             </section>
             <section class="hide-pdf">
                 <h2>Transferring files</h2>
-                <p><span class="blue">Transfer from remote to local:</span><br> 
-                scp [user]@[location]:[source path] [destination path]</p>
+                <p><span class="blue">Transfer from remote to local:</span><br> scp [user]@[location]:[source path] [destination path]</p>
                 <pre class="terminal"><code class="xml">
  scp gdiboston@209.208.111.254:~/fruit.txt .
                 </code></pre>
@@ -767,7 +805,7 @@
     gdiboston@nerfherder: exit
                 </code></pre>
             </section>
-             <!-- Review! -->
+            <!-- Review! -->
             <section class="hide-pdf">
                 <h2>Review!</h2>
                 <p>Essential commands for accessing other machines:</p>
@@ -788,7 +826,7 @@
                     <li>End your SSH session</li>
                 </ol>
             </section>
-             <!-- Resources -->
+            <!-- Resources -->
             <section class="hide-pdf">
                 <h2>Resources</h2>
                 <p>Dying to learn more about Linux?</p>
@@ -797,9 +835,11 @@
                     <li><a href="http://ryanstutorials.net/linuxtutorial/">Ryan's Tutorials: Linux Tutorial</a></li>
                     <li><a href="https://www.edx.org/course/introduction-linux-linuxfoundationx-lfs101x-2">edX Introduction to Linux</a></li>
                     <li><a href="https://www.udacity.com/course/linux-command-line-basics--ud595">Udacity Command Line Basics</a></li>
+                    <li><a href="https://learncodethehardway.org/unix/">Learn Bash the Hard Way</a></li>
+                    <li><a href="https://code.tutsplus.com/tutorials/how-to-customize-the-command-prompt--net-20586">How to Customize the Command Prompt</a></li>
                 </ul>
             </section>
-             <!-- Thanks! -->
+            <!-- Thanks! -->
             <section class="hide-pdf">
                 <p>&nbsp;</p>
                 <h2>Thanks!</h2>
@@ -807,46 +847,71 @@
                 <p class="blue">Questions?</p>
                 <p>boston@girldevelopit.com</p>
             </section>
-         
-         
 
-			</div>
-  		<footer>
-        <div class="copyright">
-          Intro to the Linux Command Line -- Boston Chapter --
-          <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
+
+
         </div>
-      </footer>
-		</div>
+        <footer>
+            <div class="copyright">
+                Intro to the Linux Command Line -- Boston Chapter --
+                <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
+            </div>
+        </footer>
+    </div>
 
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.min.js"></script>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
 
-		<script>
+    <script>
+        // Full list of configuration options available here:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
 
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
+            theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+            transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
 
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+            // Optional libraries used to extend on reveal.js
+            dependencies: [{
+                src: 'lib/js/classList.js',
+                condition: function() {
+                    return !document.body.classList;
+                }
+            }, {
+                src: 'plugin/markdown/showdown.js',
+                condition: function() {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            }, {
+                src: 'plugin/markdown/markdown.js',
+                condition: function() {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            }, {
+                src: 'plugin/highlight/highlight.js',
+                async: true,
+                callback: function() {
+                    hljs.initHighlightingOnLoad();
+                }
+            }, {
+                src: 'plugin/zoom-js/zoom.js',
+                async: true,
+                condition: function() {
+                    return !!document.body.classList;
+                }
+            }, {
+                src: 'plugin/notes/notes.js',
+                async: true,
+                condition: function() {
+                    return !!document.body.classList;
+                }
+            }]
+        });
+    </script>
 
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-				]
-			});
+</body>
 
-		</script>
-
-	</body>
 </html>
