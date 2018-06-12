@@ -1,9 +1,9 @@
-# GDI Intro to the Linux Command Line: Spring 2017, Boston
+# GDI Boston: Intro to the Linux Command Line
 Class materials for Intro to the Linux Command Line
 
 ## To view the slides and handouts:
 
-1. Download this repository to your computer https://github.com/gdiboston/gdi-intro-linux/archive/master.zip
+1. Download this repository to your computer https://github.com/ShaynaCummings/gdi-intro-linux/archive/master.zip
 
 2. Unzip the gdi-intro-linux-master.zip file that you downloaded
 
