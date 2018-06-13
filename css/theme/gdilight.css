@@ -1,13 +1,8 @@
-  @font-face {
-    font-family: "Open Sans";
-  src: local("Open Sans"), url("https://fonts.googleapis.com/css?family=Open+Sans") format("opentype");
-  font-weight: normal;
-  font-style: normal; }
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
 body {
-  font-family: 'Open Sans', 'Roboto', Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   background: white;
   background: -moz-radial-gradient(center, circle cover, #f2f2f2 0%, white 100%);
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #f2f2f2), color-stop(100%, white));
@@ -19,7 +14,7 @@ body {
 
 .reveal {
   font-family: 'Roboto', Arial, sans-serif;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 200;
   letter-spacing: -0.02em;
   color: #333333; }
@@ -39,15 +34,30 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #f05b62;
+  color: #f95a61;
   font-family: 'Roboto', Arial, sans-serif;
-  line-height: 0.9em;
+  line-height: 1.2em;
   letter-spacing: 0.02em;
   text-transform: none;
   text-shadow: #cccccc; }
 
 .reveal h1 {
-  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2); }
+  font-size: 2.4em;
+  font-weight: bold;
+}
+.reveal h2 {
+  padding: 10px 0px;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.reveal small {
+  font-size: 0.8em;
+}
+
+.blue {
+  color: #028790;
+}
 
 /*********************************************
  * LINKS
