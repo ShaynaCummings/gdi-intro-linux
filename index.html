@@ -83,7 +83,7 @@
             </section>
             <section>
                 <h2>Course materials:</h2>
-                <p><a href='http://github.com/shaynacummings/gdi-intro-linux'>github.com/shaynacummings/gdi-intro-linux</a></p>
+                <p><a href='http://github.com/shaynacummings/gdi-intro-linux' target="_blank">github.com/shaynacummings/gdi-intro-linux</a></p>
             </section>
             <!-- About You -->
             <section class="hide-pdf">
@@ -152,9 +152,8 @@
             <section>
                 <h2>Hello Terminal!</h2>
                 <ul>
-                    <li><strong class="blue">Linux or Mac OS:</strong> open Applications > Utilities > Terminal</li>
-                    <li><strong class="blue">Windows:</strong> from the Start menu, search for Cygwin </li>
-
+                    <li><strong class="blue">Linux or Mac OS:</strong> search in Finder for Terminal</li>
+                    <li><strong class="blue">Windows:</strong> from the Start menu, search for Cygwin</li>
                 </ul>
 
                 <pre class="terminal"><code class="xml">
@@ -171,7 +170,7 @@
             <!-- Where are we? -->
             <section>
                 <h2>Where are we?</h2>
-                <p><strong class="blue">pwd</strong> (print working directory)</p>
+                <p><strong class="blue"><code>pwd</code></strong> (print working directory)</p>
 
                 <p><small>Shows your current location in the directory (file) structure</small></p>
                 <pre class="terminal"><code class="xml">
@@ -181,7 +180,7 @@
             <!-- What's in here? -->
             <section>
                 <h2>What's in here?</h2>
-                <p><strong class="blue">ls</strong> (list)</p>
+                <p><strong class="blue"><code>ls</code></strong> (list)</p>
                 <p><small>Shows files/folders in our current directory</small></p>
                 <pre class="terminal"><code class="xml">
             ls
@@ -191,7 +190,6 @@
             <section>
                 <h2>Options & Arguments</h2>
                 <p><span class="blue">Syntax:</span> [command] -[options] [arguments]</p>
-
                 <pre class="terminal"><code class="xml">
             ls -l Documents
                 </code></pre>
@@ -200,7 +198,7 @@
             <!-- Getting more specific -->
             <section>
                 <h2>What does that command mean??? Using Man Pages</h2>
-                <p><strong class="blue">man</strong> (manual)</p>
+                <p><strong class="blue"></strong><code>man</code></strong> (manual)</p>
                 <p><small>Shows description, syntax, possible arguments, options, etc for a given command</small></p>
                 <pre class="terminal"><code class="xml">
             man ls
@@ -216,7 +214,7 @@
             <!-- Moving around -->
             <section>
                 <h2>Moving around</h2>
-                <p><strong class="blue">cd</strong> (change directory)</p>
+                <p><strong class="blue"><code>cd</code></strong> (change directory)</p>
                 <p><small>Moves you to the directory that you specify</small></P>
                 <pre class="terminal"><code class="xml">
             cd documents
@@ -249,13 +247,12 @@
                 </ul>
             </section>
             <section>
-                <h2>Moving around</h2>
-                <p><strong class="blue">Path syntax:</strong></p>
+                <h2>Moving around: path syntax</h2>
                 <ul>
-                    <li><span class="blue">.</span> 'Here' (current directory)</li>
-                    <li><span class="blue">../</span> One level up from current directory</li>
-                    <li><span class="blue">~/</span> Home directory (for the current user)</li>
-                    <li><span class="blue">/</span> 'Root' directory (top-most directory)</li>
+                    <li><span class="blue"><code> . </code></span> 'Here' (current directory)</li>
+                    <li><span class="blue"><code>../</code></span> One level up from current directory</li>
+                    <li><span class="blue"><code> ~/ </code></span> Home directory (for the current user)</li>
+                    <li><span class="blue"><code> / </code></span> 'Root' directory (top-most directory)</li>
             </section>
             <section>
                 <h2>Moving around: relative paths</h2>
@@ -459,44 +456,46 @@
                     <li>Extensions, syntax highlighting, and plugins available</li>
                 </ul>
             </section>
-            <!-- vim editor -->
+            <!-- vi editor -->
             <section>
-                <h2>Vim editor</h2>
+                <h2>Vi editor</h2>
                 <ul>
-                    <li>Longstanding/popular editor; sometimes set as default on Linux systems</li>
+                    <li>Longstanding command line text editor; sometimes set as default on Linux systems</li>
+                    <li>Vim (another popular editor) is a superset of Vi. Everything you do in Vi can be done in Vim</li>
+                    <li>Using Vi today since it's installed by default on Windows, Linux, and Mac</li>
                 </ul>
-                <p class="blue"><br>Check to see if vim is installed:</p>
+                <p class="blue"><br>Check to see if/where vi is installed:</p>
                 <pre class="terminal"><code class="xml">
-        which vim
+        which vi
                 </code></pre>
             </section>
             <!-- Open file in vim -->
             <section>
-                <h2>Opening files in vim</h2>
-                <p><strong class="blue"><code>vim</code></strong></p>
-                <p><small>Opens an existing file in the vim text editor</small></p>
+                <h2>Opening files in vi</h2>
+                <p><strong class="blue"><code>vi</code></strong></p>
+                <p><small>Opens an existing file in the vi text editor</small></p>
                 <pre class="terminal"><code class="xml">
-        vim fruit.txt
+        vi fruit.txt
                 </code></pre>
             </section>
-            <!-- Basic vim commands -->
+            <!-- Basic vi commands -->
             <section>
-                <h2>Basic vim commands</h2>
+                <h2>Basic vi commands</h2>
                 <ul>
-                    <li><strong class="blue">i</strong> (insert mode) add text</li>
-                    <li><strong class="blue">esc</strong> (command mode) navigate, delete text</li>
-                    <li><strong class="blue">x</strong> delete characters to the right of the cursor</li>
-                    <li><strong class="blue">X</strong> delete characters to the left of the cursor</li>
-                    <li><strong class="blue">:w</strong> (write) save the file without quitting</li>
-                    <li><strong class="blue">:wq</strong> (write) save the file and quit</li>
-                    <li><strong class="blue">:q</strong> (quit) quit without saving</li>
-                    <li><strong class="blue">:q!</strong> (force quit) force quit without saving</li>
+                    <li><strong class="blue"><code>i</code></strong> (insert mode) add text</li>
+                    <li><strong class="blue"><code>esc</code></strong> (command mode) navigate, delete text</li>
+                    <li><strong class="blue"><code>x</code></strong> delete characters to the right of the cursor</li>
+                    <li><strong class="blue"><code>X</code></strong> delete characters to the left of the cursor</li>
+                    <li><strong class="blue"><code>:w</code></strong> (write) save the file without quitting</li>
+                    <li><strong class="blue"><code>:wq</code></strong> (write) save the file and quit</li>
+                    <li><strong class="blue"><code>:q</code></strong> (quit) quit without saving</li>
+                    <li><strong class="blue"><code>:q!</code></strong> (force quit) force quit without saving</li>
                 </ul>
 
             </section>
-            <!-- Editing files in vim -->
+            <!-- Editing files in vi -->
             <section>
-                <h2>Editing files in vim</h2>
+                <h2>Editing files in vi</h2>
                 <pre class="terminal"><code>
     apple
     banana
@@ -505,14 +504,14 @@
     ~
     --INSERT--
                 </code></pre>
-                <p>Add some text to the file (i), then (esc) and quit (:q)</p>
+                <p>Add some text to the file (<code>i</code>), then (<code>esc</code>) and quit (<code>:q</code>)</p>
             </section>
-            <!-- Creating new files with vim -->
+            <!-- Creating new files with vi -->
             <section>
-                <h2>Creating new files with vim</h2>
+                <h2>Creating new files with vi</h2>
                 <pre class="terminal"><code class="xml">
-            vim [filename]
-            vim veggies.txt
+            vi [filename]
+            vi veggies.txt
                 </code></pre>
             </section>
             <!-- Combining files-->
@@ -530,19 +529,19 @@
             <section>
                 <h2>Review</h2>
                 <ul>
-                    <li><span class="blue"><code>open</code></span>: open a file in its default application</li>
-                    <li><span class="blue"><code>vim</code></span>: open a file in the vim text editor</li>
-                    <li><span class="blue"><code>i</code></span>: (vim) insert mode</li>
-                    <li><span class="blue"><code>esc</code></span>: (vim) command mode</li>
-                    <li><span class="blue"><code>:wq</code></span>: (vim) save and quit</li>
-                    <li><span class="blue"><code>:q</code></span>: (vim) quit</li>
+                    <li><span class="blue"><code>open</code></span> open a file in its default application</li>
+                    <li><span class="blue"><code>vi</code></span> open a file in the vi text editor</li>
+                    <li><span class="blue"><code>i</code></span> (vi) insert mode</li>
+                    <li><span class="blue"><code>esc</code></span> (vi) command mode</li>
+                    <li><span class="blue"><code>:wq</code></span> (vi) save and quit</li>
+                    <li><span class="blue"><code>:q</code></span> (vi) quit</li>
                     <!--<li><span class="blue">cat</span> combine multiple files into a new file</li>-->
                 </ul>
             </section>
             <!-- Practice -->
             <section>
                 <h2>Practice</h2>
-                <p>Time to practice creating and editing files with Vim!</p>
+                <p>Time to practice creating and editing files with Vi!</p>
                 <ol>
                     <li>In your practice directory, create a new file named <code>students.txt</code></li>
                     <li>Add the names of 3 classmates to your file, save and quit</li>
@@ -564,8 +563,8 @@
                 <p><strong class="blue"><code>find</code></strong> a file or folder</p>
                 <pre class="terminal"><code class="xml">
   find [location] [options] [search terms]
-  find . "practice"
-  find . -type d -name "practice"
+  find . "fruit.txt"
+  find . -type d -name "fruit.txt"
                 </code></pre>
             </section>
 
@@ -600,7 +599,7 @@
                 <h2>Search tips</h2>
                 <ul>
                     <li><span class="blue">Sytem-wide search:</span> Use <code>find</code>/<code>grep</code> on your root directory to search your entire computer...but be careful! (can take a long time)</li>
-                    <li><span class="blue">Permissions issues:</span> <code>find</code>/
+                    <li><span class="blue">Permissions issues:</span> <code>find</code> and
                     <code>grep</code> only work on folders/files that you have permission to access (more on that soon)
                         <li><span class="blue">Cancel a search (or any command):</span> control+c
                 </ul>
@@ -666,7 +665,7 @@
                 <p><small>Add or remove permissions for a file</small></p>
                 <pre class="terminal"><code class="xml">
   chmod [role][+ or -][permission] [file]
-  chmod g + w fruit.txt
+  chmod g+w fruit.txt
                 </code></pre>
             </section>
             <!-- Changing folder permissions -->
@@ -676,8 +675,8 @@
                 <p>&nbsp;</p>
                 <p>To change permissions for all files in a folder:
                     <pre class="terminal"><code class="xml">
-chmod [role] [+ or -] [permission] [parentfolder]/*
-chmod g + w newproject/*
+chmod [role][+ or -][permission] [parentfolder]/*
+chmod g+w newproject/*
                 </code></pre>
             </section>
             <!-- Root user -->
@@ -697,7 +696,7 @@ chmod g + w newproject/*
                 <p><strong class="blue">sudo</strong> (super user do)</p>
                 <p><small>Run any single command as the root user -- for example, edit permissions on files you don't own</small></p>
                 <pre class="terminal"><code class="xml">
-        sudo chmod g + w newproject/*
+        sudo chmod g+w newproject/*
                 </code></pre>
             </section>
             <!-- Review! -->
@@ -717,8 +716,8 @@ chmod g + w newproject/*
                 <ol>
                     <li>Check the permissions for all the files in your practice folder</li>
                     <li>Remove read permission for all users from your fruit.txt file</li>
-                    <li>Open your fruit.txt file in vim</li>
-                    <li>Use sudo to open your fruit.txt file in vim</li>
+                    <li>Open your fruit.txt file in vi</li>
+                    <li>Use sudo to open your fruit.txt file in vi</li>
                 </ol>
             </section>
             <!-- Accessing other machines -->
@@ -731,19 +730,19 @@ chmod g + w newproject/*
             <!-- Accessing other machines -->
             <section>
                 <h2>Accessing other machines</h2>
-                <p>In addition to running commands on your own computer, you can run commands on other machines as well!</p>
-                <p class="blue">But why would we do this?</p>
+                <p>In addition to running commands on your own computer, you can run commands on other machines as well! We will use SSH (Secure Shell) to do this.</p>
+                <p class="blue">But *why* would we do this?</p>
                 <ul>
-                    <li>Install software, make configuration changes, manage backups etc on a server</li>
+                    <li>Install software, make configuration changes, manage backups, etc on a server</li>
                     <li>Transfer files between a server and your computer</li>
                     <li>Run code that requires a server environment</li>
-                    <li>&#x26A0 Only ssh into machines that you trust</li>
+                    <li><strong class="blue">&#x26A0 Only ssh into machines that you trust</strong></li>
                 </ul>
             </section>
             <!-- Accessing other machines -->
             <section>
                 <h2>Accessing other machines</h2>
-                <p><strong class="blue">ssh</strong> (secure shell)</p>
+                <p><strong class="blue"><code>ssh</code></strong> (secure shell)</p>
                 <p><small>Access another machine remotely, via an encrypted, access-controlled connection</small></p>
                 <pre class="terminal"><code class="xml">
         ssh [user]@[location]
@@ -762,18 +761,28 @@ chmod g + w newproject/*
             <!-- Where are we?? -->
             <section>
                 <h2>Where are we??</h2>
-                <p>Let's do some exploring<br>using commands we learned earlier</p>
+                <p>Let's do some exploring using commands we learned earlier</p>
                 <pre class="terminal"><code class="xml">
     gdiboston@nerfherder: pwd
     gdiboston@nerfherder: ls -l
     gdiboston@nerfherder: ls /
                 </code></pre>
             </section>
+            <!-- Ending SSH sessions -->
+            <section>
+                <h2>Ending SSH sessions</h2>
+                <p><strong class="blue"><code>exit</code></strong></p>
+                <p><small>Closes the SSH connection with the other machine</small></p>
+                <pre class="terminal"><code class="xml">
+    gdiboston@nerfherder: exit
+                </code></pre>
+            </section>
+
             <!-- Transferring files -->
             <section>
                 <h2>Transferring files: local to remote</h2>
                 <p><strong class="blue"><code>scp</code></strong> (secure copy)</p>
-                <p><small>Transfer files between 2 computers - from local machine to remote</small></p>
+                <p><small>Securely transfer files between 2 computers - from local machine to remote</small></p>
                 <pre class="terminal"><code class="xml">
 scp [source path] [user]@[location]:[destination path]
 scp fruit.txt gdiboston@209.208.111.254:~/
@@ -786,15 +795,7 @@ scp [user]@[location]:[source path] [destination path]
 scp gdiboston@209.208.111.254:~/fruit.txt .
                 </code></pre>
             </section>
-            <!-- Ending SSH sessions -->
-            <section>
-                <h2>Ending SSH sessions</h2>
-                <p><strong class="blue"><code>exit</code></strong></p>
-                <p><small>Closes the SSH connection with the other machine</small></p>
-                <pre class="terminal"><code class="xml">
-    gdiboston@nerfherder: exit
-                </code></pre>
-            </section>
+
             <!-- Review! -->
             <section>
                 <h2>Review!</h2>
@@ -843,7 +844,7 @@ scp gdiboston@209.208.111.254:~/fruit.txt .
         </div>
         <footer>
             <div class="copyright">
-                Intro to the Linux Command Line -- Boston Chapter --
+                Intro to the Linux Command Line - GDI Boston Chapter 
                 <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
             </div>
         </footer>
